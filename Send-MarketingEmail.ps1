@@ -58,8 +58,6 @@ Param(
 
 $ErrorActionPreference = 'Stop'
 
-[System.Net.ServicePointManager]::SecurityProtocol = 'Tls13'
-
 $marketingEmailSettings = Import-PowerShellDataFile -Path 'MarketingEmailSettings.psd1'
 
 $emailContent = Get-Content -Path $TemplatePath -Raw
